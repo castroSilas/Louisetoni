@@ -5,39 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Tela principal">
-
-
-
-    <title>Tela Principal</title>
-
-    <link rel="stylesheet" href="estilo.css">
+    <meta name="description" content="Tela de Login">
+    <title>Login</title>
+    <link rel="stylesheet" href="estiloLogin.css">
 </head>
 
-<body>
-    <div>
-
+<body class="bodyLogin">
+    <div class="divLogin">
         <h1>Login</h1>
 
-        <label for="">Username</label>
-        <br>
-        <input type="text">
-        <br>
+        <div class="inputBox">
+            <input type="text" id="username" name="username" required>
+            <label for="username">Digite seu login</label>
+        </div>
 
-        <label for="">Password</label>
-        <br>
-        <input type="password" name="" id="">
-        <br>
+        <div class="inputBox">
+            <input type="password" id="password" name="password" required>
+            <label for="password">Digite sua senha</label>
+        </div>
 
-        <a href="paginaInicial.html">Login</a>
-        &nbsp; &nbsp; &nbsp;
-        <a href="cadastro.html">Cadastro</a>
-        <br>
+        <a class="btnGeneric" href="paginaInicial.html">Login</a>
+        <a class="btnGeneric" href="cadastro.html">Cadastro</a>
 
-        <a href="recuperacaoSenha.html">Esqueci minha senha</a>
-
-
-
+        <a class="linkGeneric" href="recuperacaoSenha.html">Esqueci minha senha &gt;</a>
     </div>
 </body>
 

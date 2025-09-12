@@ -5,19 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Tela principal">
-
-
-
-    <title>Tela Principal</title>
-
-    <link rel="stylesheet" href="estilo.css">
+    <meta name="description" content="Cadastro">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estiloLogin.css">
 </head>
 
-<body>
-    <a href="index.html">Página Principal</a>
+<body class="bodyLogin">
+    <div class="divCadastro">
+        <h1>Cadastro do Usuário</h1>
 
+        <div class="inputBox">
+            <input type="text" id="username" name="username" required>
+            <label for="username">Username</label>
+        </div>
 
+        <div class="inputBox">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" id="password" name="password" required>
+            <label for="password">Escolha uma senha</label>
+        </div>
+
+        <a class="btnGeneric" href="index.html">Confimar</a>
     </div>
 </body>
 
