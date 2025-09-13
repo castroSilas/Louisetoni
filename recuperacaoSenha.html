@@ -11,13 +11,35 @@
 
     <title>Recuperação de senha</title>
 
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilologin.css">
 </head>
 
-<body>
-    <div>
+<body class="bodyLogin">
+    <div class="divLogin">
+        <h1>Recuperação de Senha</h1>
+        <form action="recuperar_senha.php" method="post">
 
-        <a href="index.html">Página Principal</a>
+            <!-- Input telefone com label flutuante -->
+            <div class="input-flutuante">
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+                <label for="telefone">Telefone</label>
+            </div>
+
+            <!-- Input código de 6 dígitos -->
+            <div class="codigo-container">
+                <input type="text" maxlength="1" class="codigo" required>
+                <input type="text" maxlength="1" class="codigo" required>
+                <input type="text" maxlength="1" class="codigo" required>
+                <input type="text" maxlength="1" class="codigo" required>
+                <input type="text" maxlength="1" class="codigo" required>
+                <input type="text" maxlength="1" class="codigo" required>
+            </div>
+            <button type="submit">Confirmar Código</button>
+            <br>
+
+            <a class="linkGeneric" href="#">Não recebi o código, reenviar...</a>
+        </form>
+
 
 
     </div>
